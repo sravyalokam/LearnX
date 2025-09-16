@@ -19,19 +19,19 @@
         </div>
       </div>
 
-      <!-- Submit Button -->
+  
       <button type="submit" [disabled]="form.invalid">Verify OTP</button>
     </form>
 
-    <!-- Verification Result -->
-    <div class="success" *ngIf="message && message.startsWith('✅')">
+ 
+    <div class="success" *ngIf="message && message.startsWith('')">
       <small>{{ message }}</small>
     </div>
-    <div class="error" *ngIf="message && message.startsWith('❌')">
+    <div class="error" *ngIf="message && message.startsWith('')">
       <small>{{ message }}</small>
     </div>
 
-    <!-- Extra Links -->
+    
     <div class="extra-links">
       <a routerLink="/forget-password">Back to Forgot Password</a>
     </div>
