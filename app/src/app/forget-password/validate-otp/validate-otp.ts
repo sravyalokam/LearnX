@@ -23,19 +23,18 @@ export class ValidateOtp implements OnInit {
       otp: ['', [Validators.required, Validators.pattern(/^\d{6}$/)]]
     });
 
-    // Retrieve OTP and email from service
     this.otpFromForgetPassword = this.otpService.otp;
     this.email = this.otpService.email;
   }
 
   verifyOtp(): void {
     if (this.form.value.otp === this.otpFromForgetPassword) {
-      this.message = '✅ OTP verified successfully!';
+      this.message = ' OTP verified successfully!';
 
-      // Clear OTP from service for security
+    
       this.otpService.clearOtp();
     } else {
-      this.message = '❌ Invalid OTP. Please try again.';
+      this.message = ' Invalid OTP. Please try again.';
     }
   }
 }
