@@ -1,0 +1,47 @@
+<div class="assignments-container">
+  <div class="header">
+    <h1>My Assignments</h1>
+    <p>Track your progress across all courses</p>
+  </div>
+
+  <div class="filter-section">
+    <div class="filter-dropdown-container">
+      <label for="courseSelect">Filter by Course:</label>
+      <select id="courseSelect" [(ngModel)]="selectedCourse" (change)="filterByCourse(selectedCourse)">
+        <option value="all">All Courses</option>
+        <option *ngFor="let course of courses" [value]="course.title">{{ course.title }}</option>
+      </select>
+    </div>
+
+    <div class="level-filter">
+      <button class="filter beginner" [class.active]="selectedLevel==='beginner'" >Beginner</button>
+      <button class="filter intermediate" [class.active]="selectedLevel==='intermediate'" >Intermediate</button>
+      <button class="filter advanced" [class.active]="selectedLevel==='advanced'" >Advanced</button>
+      <button class="level-btn" [class.active]="selectedLevel==='all'" (click)="filterByLevel('all')">All Levels</button>
+    </div>
+  </div>
+
+  <!-- Assignments Grid -->
+  <div class="assignments-grid">
+    <div *ngFor="let assignment of filteredAssignments" class="assignment-card">
+      <div class="card-header">
+        <div class="level-badge" >{{ assignment.level | titlecase }}</div>
+      </div>
+
+      <div class="card-content">
+        <h3>{{ assignment.title }}</h3>
+        <p>{{ assignment.description }}</p>
+        <div class="assignment-meta">
+          <span>⏱️ {{ assignment.duration }}</span>
+          <span>🏆 {{ assignment.points }} pts</span>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <a [routerLink]="['/assignments', assignment.title, assignment.level]">Start Assignment</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <app-contact-us></app-contact-us>  -->

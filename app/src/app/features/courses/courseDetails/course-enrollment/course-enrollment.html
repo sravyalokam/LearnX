@@ -1,0 +1,62 @@
+<div *ngIf="course" class="enroll-wrapper">
+
+  <div class="enroll-left">
+    <h2>Subscribe to {{ course.title }}</h2>
+    <p class="subtitle">
+      Unlock unlimited access to {{ course.title }} and other top courses with LearnX.
+    </p>
+
+
+    <ul class="features">
+      <li>📘 Access to sample courses and tutorials</li>
+      <li>📝 Practice assignments included</li>
+      <li>🎓 Basic to advanced learning materials</li>
+    </ul>
+
+  
+    <div class="payment">
+      <h3>Payment Method</h3>
+      <label>
+        <input type="radio" name="payment" value="card" [(ngModel)]="paymentMethod" checked />
+        💳 Card
+      </label>
+      <label>
+        <input type="radio" name="payment" value="upi" [(ngModel)]="paymentMethod" />
+        🏦 UPI
+      </label>
+    </div>
+  </div>
+
+  <div class="enroll-right">
+    <h3>Summary</h3>
+    <div class="line">
+      <span>Full-time access</span>
+      <span> {{ breakdown.total | number  | currency:'USD':'symbol':'1.0-2' }}</span>
+    </div>
+
+    <div class="line total">
+      <span>Total</span>
+      <span> {{ breakdown.total | number | currency:'USD':'symbol':'1.0-2'}}</span>
+    </div>
+
+
+    <div class="coupon-row">
+      <input placeholder="Enter Coupon" [(ngModel)]="couponCode" />
+      <button type="button" class="apply" (click)="applyCoupon()">Apply</button>
+    </div>
+    <div class="coupon-msg" *ngIf="couponMsg"><b>{{ couponMsg }}</b></div>
+
+   <button class="btn-primary" (click)="onSubmit()" [disabled]="enrolling">
+  🔒 Start subscription
+</button>
+  </div>
+</div>
+
+<div class="success-bar" *ngIf="showSuccess">
+  🎉 You have successfully enrolled in {{ course.title }}!
+  <button class="close-btn" (click)="showSuccess = false">✕</button>
+</div>
+
+<!-- <ng-template #loading>
+  <div class="loading-state">⏳ Loading course details...</div>
+</ng-template> -->

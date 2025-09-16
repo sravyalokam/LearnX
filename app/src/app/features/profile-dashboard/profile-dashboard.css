@@ -1,0 +1,43 @@
+/* Full-page layout */
+.profile-page-container {
+  display: flex;
+  min-height: calc(100vh - 60px); /* adjust 60px if footer height differs */
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Left column */
+.profile-column {
+  width: 25%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Right column */
+.content-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Footer */
+.page-footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .profile-page-container {
+    flex-direction: column;
+  }
+  .profile-column {
+    width: 100%;
+  }
+}

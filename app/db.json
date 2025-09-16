@@ -1,0 +1,852 @@
+{
+  "nav_item": [
+    {
+      "label": "Home",
+      "id": "f808"
+    },
+    {
+      "label": "About us",
+      "id": "fdbd"
+    },
+    {
+      "label": "Courses",
+      "id": "3585"
+    },
+    {
+      "label": "Assignments",
+      "id": "5ee3"
+    }
+  ],
+  "about": [
+    {
+      "icon": "⭐",
+      "title": "Industry Experts",
+      "description": "Learn from professionals who bring real-world experience to every lesson.",
+      "id": "4dbc"
+    },
+    {
+      "icon": "✅",
+      "title": "Hands-On Projects",
+      "description": "Build real projects to showcase your skills to employers and clients.",
+      "id": "14bd"
+    },
+    {
+      "icon": "⚡",
+      "title": "Adaptive Learning",
+      "description": "AI-powered learning adapts to your pace and style for better knowledge retention.",
+      "id": "1437"
+    },
+    {
+      "icon": "👥",
+      "title": "Community Support",
+      "description": "Join a thriving learner community to collaborate and grow together.",
+      "id": "8edf"
+    },
+    {
+      "icon": "🎓",
+      "title": "Certified Learning",
+      "description": "Earn certificates that add value to your professional portfolio.",
+      "id": "199b"
+    },
+    {
+      "icon": "🚀",
+      "title": "Lightning Fast",
+      "description": "Access your learning anytime, anywhere with a fast and secure platform.",
+      "id": "7212"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Web Development",
+      "image": "assets/images/web_dev.png",
+      "rating": 4.5,
+      "ratingsCount": "1,200 ratings",
+      "totalHours": "12h 45minutes",
+      "price": 299,
+      "courseDetails": {
+        "description": [
+          "Learn the fundamentals of front-end web development.",
+          "Understand HTML, CSS, and JavaScript essentials.",
+          "Build responsive and interactive web applications."
+        ],
+        "chapters": [
+          {
+            "id": "1",
+            "title": "Introduction to HTML",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "2",
+            "title": "CSS Basics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "12:00",
+            "isActive": false
+          },
+          {
+            "id": "3",
+            "title": "JavaScript Essentials",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "15:00",
+            "isActive": false
+          },
+          {
+            "id": "4",
+            "title": "Responsive Design",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:30",
+            "isActive": false
+          },
+          {
+            "id": "5",
+            "title": "Setting Up Your Environment",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          }
+        ],
+        "currentChapter": {
+          "title": "Setting Up Your Environment",
+          "videoUrl": "assets/videos/React.mp4",
+          "videoDuration": "09:30"
+        },
+        "faqs": [
+          {
+            "question": "What is front-end web development?",
+            "answer": "Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+            "isExpanded": false
+          },
+          {
+            "question": "Why is setting up an environment important?",
+            "answer": "Setting up a proper development environment is crucial for efficient coding, debugging, and testing.",
+            "isExpanded": false
+          }
+        ]
+      },
+      "id": "cf01"
+    },
+    {
+      "title": "C# with ASP.NET",
+      "image": "assets/images/csharp.png",
+      "rating": 4.8,
+      "ratingsCount": "500K ratings",
+      "totalHours": "20 total hours",
+      "price": 399,
+      "courseDetails": {
+        "description": [
+          "Learn the fundamentals of C# and ASP.NET.",
+          "Build web applications using C#.",
+          "Understand MVC architecture and Entity Framework."
+        ],
+        "chapters": [
+          {
+            "id": "1",
+            "title": "Hello World",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "08:00",
+            "isActive": false
+          },
+          {
+            "id": "2",
+            "title": "CSS Basics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "3",
+            "title": "JavaScript Essentials",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "12:00",
+            "isActive": false
+          },
+          {
+            "id": "4",
+            "title": "Responsive Design",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "5",
+            "title": "Setting Up Your Environment",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          }
+        ],
+        "currentChapter": {
+          "title": "Setting Up Your Environment",
+          "videoUrl": "assets/videos/React.mp4",
+          "videoDuration": "09:30"
+        },
+        "faqs": [
+          {
+            "question": "What is C#?",
+            "answer": "C# is a modern object-oriented programming language developed by Microsoft.",
+            "isExpanded": false
+          },
+          {
+            "question": "Why learn ASP.NET?",
+            "answer": "ASP.NET allows you to build dynamic web applications quickly and efficiently.",
+            "isExpanded": false
+          }
+        ]
+      },
+      "id": "20f7"
+    },
+    {
+      "title": "Data Analytics",
+      "image": "assets/images/data_analytics.png",
+      "rating": 4.7,
+      "ratingsCount": "450K ratings",
+      "totalHours": "18 total hours",
+      "price": 349,
+      "courseDetails": {
+        "description": [
+          "Learn data analysis techniques using Python and Excel.",
+          "Perform data visualization and reporting.",
+          "Understand statistical concepts for data-driven decisions."
+        ],
+        "chapters": [
+          {
+            "id": "1",
+            "title": "Introduction to Data Analytics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "2",
+            "title": "Python Basics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "12:00",
+            "isActive": false
+          },
+          {
+            "id": "3",
+            "title": "Data Visualization",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "15:00",
+            "isActive": false
+          },
+          {
+            "id": "4",
+            "title": "Excel for Data Analysis",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:30",
+            "isActive": false
+          },
+          {
+            "id": "5",
+            "title": "Final Project",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          }
+        ],
+        "currentChapter": {
+          "title": "Final Project",
+          "videoUrl": "assets/videos/React.mp4",
+          "videoDuration": "09:30"
+        },
+        "faqs": [
+          {
+            "question": "What is data analytics?",
+            "answer": "Data analytics is the process of examining datasets to draw conclusions about the information they contain.",
+            "isExpanded": false
+          },
+          {
+            "question": "Why is visualization important?",
+            "answer": "Visualization helps in understanding trends, patterns, and insights from data.",
+            "isExpanded": false
+          }
+        ]
+      },
+      "id": "c4f2"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "1",
+      "title": "Web Development",
+      "description": "Learn HTML, CSS, and JavaScript fundamentals and build a simple responsive webpage.",
+      "course": "Web Development",
+      "level": "Beginner",
+      "duration": "2 hours",
+      "completed": true,
+      "dueDate": "2025-09-10",
+      "points": 100
+    },
+    {
+      "id": "1B",
+      "title": "Web Development",
+      "description": "Build small interactive web components using JavaScript and CSS.",
+      "course": "Web Development",
+      "level": "Intermediate",
+      "duration": "3 hours",
+      "completed": false,
+      "dueDate": "2025-09-12",
+      "points": 120
+    },
+    {
+      "id": "1C",
+      "title": "Web Development",
+      "description": "Create a single-page application (SPA) using JavaScript frameworks.",
+      "course": "Web Development",
+      "level": "Advanced",
+      "duration": "4 hours",
+      "completed": false,
+      "dueDate": "2025-09-15",
+      "points": 150
+    },
+    {
+      "id": "2",
+      "title": "C# with ASP.NET",
+      "description": "Practice basic C# syntax, ASP.NET MVC, and create your first web application.",
+      "course": "C# with ASP.NET",
+      "level": "Beginner",
+      "duration": "3 hours",
+      "completed": false,
+      "dueDate": "2025-09-12",
+      "points": 120
+    },
+    {
+      "id": "2B",
+      "title": "C# with ASP.NET",
+      "description": "Implement controllers, views, and basic data binding in ASP.NET MVC.",
+      "course": "C# with ASP.NET",
+      "level": "Intermediate",
+      "duration": "4 hours",
+      "completed": false,
+      "dueDate": "2025-09-16",
+      "points": 140
+    },
+    {
+      "id": "2C",
+      "title": "C# with ASP.NET",
+      "description": "Create a full ASP.NET web application with authentication and database integration.",
+      "course": "C# with ASP.NET",
+      "level": "Advanced",
+      "duration": "5 hours",
+      "completed": false,
+      "dueDate": "2025-09-20",
+      "points": 180
+    },
+    {
+      "id": "3",
+      "title": "Data Analytics",
+      "description": "Analyze sample datasets using Python and Excel, create visualizations, and present insights.",
+      "course": "Data Analytics",
+      "level": "Beginner",
+      "duration": "4 hours",
+      "completed": false,
+      "dueDate": "2025-09-15",
+      "points": 150
+    },
+    {
+      "id": "3B",
+      "title": "Data Analytics",
+      "description": "Perform data cleaning, advanced Excel functions, and statistical analysis.",
+      "course": "Data Analytics",
+      "level": "Intermediate",
+      "duration": "5 hours",
+      "completed": false,
+      "dueDate": "2025-09-18",
+      "points": 170
+    },
+    {
+      "id": "3C",
+      "title": "Data Analytics",
+      "description": "Build predictive models and advanced dashboards using Python and Excel.",
+      "course": "Data Analytics",
+      "level": "Advanced",
+      "duration": "6 hours",
+      "completed": false,
+      "dueDate": "2025-09-22",
+      "points": 200
+    }
+  ],
+  "takeAssignment": [
+    {
+      "id": "A101",
+      "title": "Web Development",
+      "course": "Web Development",
+      "questions": [
+        {
+          "level": "Beginner",
+          "question": "Which HTML tag is used to create a hyperlink?",
+          "options": [
+            "<a>",
+            "<link>",
+            "<href>",
+            "<url>"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which HTML tag is used to display an image?",
+          "options": [
+            "<img>",
+            "<picture>",
+            "<src>",
+            "<figure>"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 4,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which CSS property is used to change the text color?",
+          "options": [
+            "font-color",
+            "color",
+            "text-style",
+            "background-color"
+          ],
+          "correctAns": 1,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 5,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "What does CSS stand for?",
+          "options": [
+            "Cascading Style Sheets",
+            "Creative Style System",
+            "Computer Style Sheet",
+            "Coded Style Syntax"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 6,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "How do you center a div using Flexbox?",
+          "options": [
+            "justify-content:center",
+            "text-align:center",
+            "margin:auto",
+            "align-items:flex-start"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Advanced",
+          "question": "Create a simple SPA with vanilla JavaScript?",
+          "options": [
+            "Use multiple HTML pages",
+            "Use Angular",
+            "Use JS routing & DOM manipulation",
+            "Use PHP"
+          ],
+          "correctAns": 2,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 3,
+                "feedback": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "A102",
+      "title": "C# with ASP.NET",
+      "course": "C# with ASP.NET",
+      "questions": [
+        {
+          "level": "Beginner",
+          "question": "Which keyword defines a class in C#?",
+          "options": [
+            "class",
+            "struct",
+            "object",
+            "interface"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "How do you implement a basic ASP.NET MVC controller?",
+          "options": [
+            "Use Controller base class",
+            "Use PageModel",
+            "Use Razor",
+            "Use Web API"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Advanced",
+          "question": "How do you create a middleware in ASP.NET Core?",
+          "options": [
+            "Implement IMiddleware interface",
+            "Use Web Forms",
+            "Use MVC only",
+            "Use SignalR"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 3,
+                "feedback": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "A103",
+      "title": "Data Analytics",
+      "course": "Data Analytics",
+      "questions": [
+        {
+          "level": "Beginner",
+          "question": "Which Python library is commonly used for data analysis?",
+          "options": [
+            "NumPy",
+            "React",
+            "Angular",
+            "Bootstrap"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "Which Excel function can you use for data summarization?",
+          "options": [
+            "VLOOKUP",
+            "Pivot Tables",
+            "INDEX",
+            "MATCH"
+          ],
+          "correctAns": 1,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Advanced",
+          "question": "How do you perform data preprocessing in Python before analysis?",
+          "options": [
+            "Use pandas to clean & transform data",
+            "Just visualize directly",
+            "Use Excel charts",
+            "Ignore missing values"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 3,
+                "feedback": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "detailedcourses": [
+    {
+      "id": "webdev",
+      "name": "Web Development",
+      "icon": "🌐",
+      "color": "#3B82F6",
+      "totalAssignments": 9,
+      "completedAssignments": 4
+    },
+    {
+      "id": "csharp",
+      "name": "C# Programming",
+      "icon": "💻",
+      "color": "#10B981",
+      "totalAssignments": 9,
+      "completedAssignments": 6
+    }
+  ],
+  "Faqs": [
+    {
+      "question": "What is front-end web development?",
+      "answer": "Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+      "isExpanded": false,
+      "id": "6cd2"
+    },
+    {
+      "question": "Why is setting up an environment important?",
+      "answer": "Setting up a proper development environment is crucial for efficient coding, debugging, and testing.",
+      "isExpanded": false,
+      "id": "4cdd"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Asha Rao",
+      "email": "asha@example.com",
+      "password": "Password123!",
+      "avatarUrl": "https://i.pravatar.cc/100?img=12",
+      "role": "student",
+      "createdAt": "2024-08-01T10:00:00.000Z",
+      "enrolledCourses": [
+        "Web Development"
+      ],
+      "completedAssignments": [
+        {
+          "title": "Web Development",
+          "level": "beginner"
+        },
+        {
+          "title": "C# with ASP.NET",
+          "level": "beginner"
+        },
+        {
+          "title": "Data Analytics",
+          "level": "beginner"
+        }
+      ],
+      "feedbacks": [
+        {
+          "assignmentId": 0,
+          "rating": 5,
+          "comment": "Today, I am a software developer, and I credit a significant part of my success to the solid foundation laid by this course."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Ravi Kumar",
+      "email": "ravi@example.com",
+      "password": "RaviPass#22",
+      "avatarUrl": "https://i.pravatar.cc/100?img=5",
+      "role": "instructor",
+      "createdAt": "2024-09-15T07:30:00.000Z",
+      "enrolledCourses": [
+        "C# with ASP.NET",
+        "Data Analytics",
+        "Web Development",
+        "Web Development"
+      ],
+      "feedbacks": [
+        {
+          "assignmentId": 0,
+          "rating": 5,
+          "comment": "I would highly recommend this Web Development Bootcamp to anyone interested in pursuing a career in web development or looking to enhance their skills in this field."
+        }
+      ]
+    },
+    {
+      "id": "3361",
+      "name": "Sravya Lokam",
+      "email": "sravya@gmail.com",
+      "password": "sravya123",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Sravya Lokam",
+      "role": "student",
+      "createdAt": "2025-09-09T13:18:27.431Z",
+      "enrolledCourses": [
+        "Web Development",
+        "C# with ASP.NET"
+      ],
+      "feedbacks": [
+        {
+          "assignmentId": 0,
+          "rating": 4,
+          "comment": "The Bootcamp offered a perfect blend of theory and hands-on practice, which really helped me gain confidence in web development."
+        }
+      ]
+    },
+    {
+      "id": "f199",
+      "name": "Sree Sravya",
+      "email": "sree@gmail.com",
+      "password": "Sree@123",
+      "role": "student",
+      "createdAt": "2025-09-13T01:10:23.048Z",
+      "feedbacks": [
+        {
+          "assignmentId": 0,
+          "rating": 4,
+          "comment": "A well-structured and engaging program that exceeded my expectations"
+        }
+      ],
+      "enrolledCourses": [
+        "Web Development"
+      ]
+    },
+    {
+      "id": "c430",
+      "name": "Laxmi Swaroopa",
+      "email": "laxmibandaru3@gmail.com",
+      "password": "Laxmi@34",
+      "role": "student",
+      "createdAt": "2025-09-13T04:07:00.541Z",
+      "enrolledCourses": [
+        "C# with ASP.NET"
+      ],
+      "feedbacks": [
+        {
+          "assignmentId": 0,
+          "rating": 4,
+          "comment": "This Bootcamp gave me the practical skills and portfolio projects I needed to step into the job market with confidence."
+        }
+      ]
+    },
+    {
+      "id": "2a86",
+      "name": "Bhanu",
+      "email": "bhanu@gmail.com",
+      "password": "Bhanu123!",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Bhanu",
+      "role": "student",
+      "createdAt": "2025-09-15T10:24:07.033Z",
+      "feedbacks": [
+        {
+          "assignmentId": 0,
+          "rating": 5,
+          "comment": "The Bootcamp was intensive, but the skills I gained were absolutely worth it."
+        }
+      ]
+    },
+    {
+      "id": "c645",
+      "name": "Sravya",
+      "email": "pushpa@gmail.com",
+      "password": "Sravya@12",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Sravya",
+      "role": "student",
+      "createdAt": "2025-09-16T01:31:34.448Z"
+    },
+    {
+      "id": "d8b8",
+      "name": "Lokam",
+      "email": "pushpa1@gmail.com",
+      "password": "Sravya$123",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Lokam",
+      "role": "student",
+      "createdAt": "2025-09-16T01:40:53.379Z"
+    },
+    {
+      "id": "feb4",
+      "name": "Sravya Lokam",
+      "email": "sravyapushpa2003@gmail.com",
+      "password": "Sravya@123",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Sravya Lokam",
+      "role": "student",
+      "createdAt": "2025-09-16T06:08:30.673Z"
+    }
+  ],
+  "enrolledcourses": [
+    {
+      "id": "b7c6",
+      "course": "Web Development"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+.courses {
+  text-align: center;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+
+
+  background: linear-gradient(90deg, #4B4FFF, #FF4DB7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* card */
+.course-card {
+  width: 340px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(105, 104, 104, 0.08);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(121, 121, 123, 0.15),
+    0 8px 24px rgba(121, 121, 123, 0.15);
+  border: 1px solid rgba(75, 71, 255, 0.15);
+}
+
+/* image */
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* title */
+.course-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 16px 0 10px;
+  color: #4B4FFF;
+}
+
+/* info badges */
+.course-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.badge {
+  background: #f9f9ff;
+  color: #6b7280;
+  border: 1px solid rgb(118, 116, 116);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+.enroll-btn {
+  margin: 0;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 350;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #595cfb;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(190, 190, 193, 0.25);
+}
+
+.enroll-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.view-more-btn {
+  margin-top: 36px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  position: relative;
+  cursor: pointer;
+}
+
+.view-more-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #4B4FFF, #FF4DB7);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn:hover::after {
+  transform: scaleX(1);
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto 0 auto;
+}
+
+.course-price {
+  font-weight: bold;
+  color: #4B4FFF;
+  font-size: 20px;
+  margin: 0;
+}

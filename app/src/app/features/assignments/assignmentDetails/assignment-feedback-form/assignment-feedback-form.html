@@ -1,0 +1,17 @@
+<div class="feedback-container">
+  <h3>We value your feedback! 🎓</h3>
+  <p>Help us improve your learning experience.</p>
+
+  <!-- Star Rating -->
+  <div class="rating">
+    <label *ngFor="let star of [1,2,3,4,5]">
+      <input type="radio" [value]="star" name="rating" [(ngModel)]="rating"/>
+      <span class="star">★</span>
+    </label>
+  </div>
+
+  <!-- Feedback Textarea -->
+  <textarea [(ngModel)]="comment" placeholder="Write your feedback..." rows="4"></textarea>
+
+  <button class="submit-feedback" (click)="submitFeedback()">Submit Feedback</button>
+</div>

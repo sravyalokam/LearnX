@@ -1,0 +1,47 @@
+<section class="courses">
+  <h2 class="section-title">{{ title }}</h2>
+
+  <div class="cards-wrapper">
+    <div class="course-card" *ngFor="let course of courses">
+      <img [src]="course.image" [alt]="course.title" class="course-image" />
+      <h3 class="course-title">{{ course.title | uppercase }}</h3>
+
+      <div class="course-info">
+        <span class="badge">
+          ⭐ {{ course.rating }}
+        </span>
+        <span class="badge">
+          {{ course.ratingsCount }}
+        </span>
+        <span class="badge">
+          {{ course.totalHours }}
+        </span>
+
+        <div class="course-footer">
+          <p class="course-price">{{ course.price | currency:'USD':'symbol':'1.0-2' }}</p>
+          <!-- <button class="enroll-btn" [routerLink]="['/course-details', course.title]"><b>Enroll now</b></button> -->
+          <button 
+            class="enroll-btn"
+           (click)="handleEnrollment((user?.enrolledCourses ?? []).includes(course.title), course)">
+         <b>{{ (user?.enrolledCourses ?? []).includes(course.title) ? "Enrolled" : "Enroll now" }}</b>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="section__footer">
+  <button class="view-more-btn" routerLink="/Courses">
+    View More
+  </button> 
+  </div> -->
+
+
+  <router-outlet></router-outlet>
+</section>
+
+
+
+<!-- <app-contact-us></app-contact-us> -->

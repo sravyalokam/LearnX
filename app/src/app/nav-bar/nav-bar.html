@@ -1,0 +1,35 @@
+<div class="navbar-wrapper">
+  <nav class="navbar">
+    <!-- left -->
+    <div class="brand">
+      <a routerLink="/Home" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+    </div>
+
+    <!-- center -->
+    <ul class="nav-links">
+      <li *ngFor="let item of nav_items">
+        <a 
+          [routerLink]="['/', item.label]" 
+          routerLinkActive="active-link" 
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          {{ item.label }}
+        </a>
+      </li>
+    </ul>
+
+    <!-- right -->
+    <div class="navbar-buttons">
+      <!-- <button class="btn primary-btn" routerLink="Courses"> 
+        <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 2l2.5 5.5L20 9l-4 3 1 6-5-3-5 3 1-6-4-3 5.5-1.5L12 2z"/>
+        </svg>
+        Explore Our Programs
+      </button>  -->
+
+      <!-- Two separate buttons -->
+      <button class="btn profile-btn" routerLink="/profile">Profile</button>
+      <button class="btn logout-btn" (click)="onLogout()">Logout</button>
+    </div>
+  </nav>
+</div>

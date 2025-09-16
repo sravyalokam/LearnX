@@ -1,0 +1,28 @@
+<!-- About Us Section -->
+
+<section id="about" class="about">
+  <div class="container">
+
+    <!-- Section Header -->
+    <div class="section-header">
+      <span class="section-subtitle">Why Choose LearnX</span>
+      <h2 class="section-title">What Makes Us Different</h2>
+      <p class="section-description">
+        We're not just another learning platform. Here's what sets LearnX apart from the competition.
+      </p>
+    </div>
+
+    <!-- About us Cards -->
+    <div class="features-grid">
+      <div class="feature-card" *ngFor="let item of about$ | async">
+        <div class="feature-icon">{{item.icon}}</div>
+        <h3>{{item.title}}</h3>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<!-- <app-contact-us></app-contact-us> -->

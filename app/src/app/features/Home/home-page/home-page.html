@@ -1,0 +1,79 @@
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-pattern"></div>
+  </div>
+
+  <div class="container hero-content">
+    <!-- Left Side (Text) -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <!-- <span class="badge badge-primary">✨ New courses available</span> -->
+      </div>
+
+      <h1 class="hero-title">
+        Transform Your Career with
+        <span class="gradient-text">Expert-Led Courses</span>
+      </h1>
+
+      <p class="hero-description">
+        Join thousands of learners who have advanced their careers through our comprehensive online courses.
+        Learn at your own pace with industry experts and practical projects.
+      </p>
+
+     <div class="hero-actions">
+  <a href="#courses" class="btn btn-primary btn-large">
+    <span class="btn-text">Start Learning Today</span>
+    <span class="btn-icon">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 
+             010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 
+             11H3a1 1 0 110-2h11.586l-4.293-4.293a1 
+             1 0 010-1.414z"
+          clip-rule="evenodd" />
+      </svg>
+    </span>
+  </a>
+  <a routerLink="/About us" class="btn btn-outline">Learn More</a>
+</div>
+
+
+      <div class="hero-stats">
+        <div class="stat">
+         
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Hands-on Practice</div>
+        </div>
+        <div class="stat">
+          
+          <div class="stat-number">3 Levels</div>
+          <div class="stat-label">Beginner to Advanced</div>
+        </div>
+        <div class="stat">
+       
+          <div class="stat-number">Self-Paced</div>
+          <div class="stat-label">Learn Anytime, Anywhere</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side (Image) -->
+    <div class="hero-visual">
+      <div class="hero-image">
+        <img
+          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Student learning online"
+          class="main-image">
+
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Courses -->
+<app-courses [courses]="featuredCourses" title="Our Top Picks"></app-courses>
+
+<app-feedback-list></app-feedback-list>
+
+<!-- <app-contact-us ></app-contact-us>  -->
