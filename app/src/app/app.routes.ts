@@ -23,6 +23,8 @@ import { CourseEnrollment } from './features/courses/courseDetails/course-enroll
 import { ProfileDashboard } from './features/profile-dashboard/profile-dashboard';
 import { AssignmentScoreCard } from './features/assignments/assignmentDetails/assignment-score-card/assignment-score-card';
 import { ValidateOtp } from './forget-password/validate-otp/validate-otp';
+import { ChangePassword } from './forget-password/change-password/change-password';
+import { StripePaymentComponent } from './features/courses/courseDetails/stripe-payment/stripe-payment';
 
 
 export const routes: Routes = [
@@ -34,31 +36,26 @@ export const routes: Routes = [
   { path: 'signin', component: SignIn },
   { path: 'forgetpassword', component: ForgetPassword },
   { path: 'validate-otp', component: ValidateOtp},
+  { path: 'change-password', component: ChangePassword},
 
-  { path: 'profile', component: ProfileDashboard, canActivate: [AuthGuard]},
-  { path: 'homepage', component: HomePage, canActivate: [AuthGuard], },
-  { path: 'Home', component: HomePage, canActivate: [AuthGuard] },
-  { path: 'About us', component: AboutUs, canActivate: [AuthGuard] },
-  { path: 'Courses', component: CoursesSection, canActivate: [AuthGuard] },
+  { path: 'profile', component: ProfileDashboard, canActivate: [AuthGuard], data: { roles: ['student', 'instructor', 'admin'] } },
+  { path: 'homepage', component: HomePage, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin', 'assignment-manager'] }},
+  { path: 'Home', component: HomePage, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin'] } },
+  { path: 'About us', component: AboutUs, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin'] }},
+  { path: 'Courses', component: CoursesSection, canActivate: [AuthGuard], data: { roles: ['student', 'instructor', 'admin'] }},
   // { path: 'course-details', component: CoursePageComponent, canActivate: [AuthGuard]},
-  { path: 'course-enrollment', component: CourseEnrollment, canActivate: [AuthGuard] },
-  { path: 'course-details/:title', component: CoursePageComponent, canActivate: [AuthGuard] },
-  { path: 'course-enrollment/:title', component: CourseEnrollment, canActivate: [AuthGuard] },
+  { path: 'course-enrollment', component: CourseEnrollment, canActivate: [AuthGuard], data: { roles: ['student', 'instructor', 'admin'] } },
+  { path: 'course-details/:title', component: CoursePageComponent, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin'] } },
+  { path: 'course-enrollment/:title', component: CourseEnrollment, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin'] } },
+   { path: 'payment', component: StripePaymentComponent, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin'] } },
   // { path: 'courses/:title', component: CoursePageComponent },
-  { path: 'Assignments', component: AssignmentList, canActivate: [AuthGuard] },
+  { path: 'Assignments', component: AssignmentList, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin', 'assignment-manager'] } },
   //{ path: 'assignments/:title', component: AssignmentQuestions, canActivate: [AuthGuard] },
-  { path: 'assignments/:title/:level', component: AssignmentQuestions, canActivate: [AuthGuard] },
-  { path: 'FAQs', component: Faqs, canActivate: [AuthGuard] },
-  { path: 'scorecard', component: AssignmentScoreCard, canActivate: [AuthGuard] },
-  // { path: ':title', component: AssignmentQuestions },
+  { path: 'assignments/:title/:level', component: AssignmentQuestions, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin', 'assignment-manager'] } },
+  { path: 'FAQs', component: Faqs, canActivate: [AuthGuard], data: { roles: ['student', 'instructor', 'admin'] } },
+  { path: 'scorecard', component: AssignmentScoreCard, canActivate: [AuthGuard],  data: { roles: ['student', 'instructor', 'admin','assignment-manager'] } },
+
   { path: '**', redirectTo: 'signin' }
 
 ];
 
-
-bootstrapApplication(App, {
-  providers: [
-    provideRouter(routes),
-    provideHttpClient()
-  ]
-});

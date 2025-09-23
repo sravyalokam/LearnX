@@ -19,17 +19,17 @@ export class Auth {
         map(users => {
           const user = users && users.length ? users[0] : null;
 
-          // Email exists
+      
           if (!user) {
             return null;
           }
 
-          // Validate password
+          
           if (user.password !== password) {
             return null;
           }
 
-          // Create session
+          
           const token = btoa(`${user.id}:${Date.now()}`);
           const session = { token, userId: user.id, createdAt: new Date().toISOString() };
           sessionStorage.setItem(this.storageKey, JSON.stringify(session));
@@ -42,6 +42,7 @@ export class Auth {
   logout(): void {
     sessionStorage.removeItem(this.storageKey);
     localStorage.removeItem(this.storageKey);
+     console.log('Session cleared:', this.storageKey);
   }
 
   getSession(): { token: string; userId: number; createdAt: string } | null {

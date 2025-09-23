@@ -1,7 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavBar } from './nav-bar/nav-bar';
-// import { bootstrapApplication } from '@angular/platform-browser';
+import { bootstrapApplication } from '@angular/platform-browser';
 import { HomePage } from './features/Home/home-page/home-page';
 // import { Forms } from './shared/components/forms/forms';
 // import { AboutUs } from './features/about-us/about-us';
@@ -63,4 +63,4 @@ export class App {
 }
 
 
-// bootstrapApplication(App);
+

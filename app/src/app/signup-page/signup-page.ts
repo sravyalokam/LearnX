@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
 export class SignupPage implements OnInit {
   form!: FormGroup;
   error: string | null = null;
-  submitted = false; // Flag to show errors after submit
+  submitted = false; 
 
   constructor(
     private fb: FormBuilder,
@@ -28,7 +28,7 @@ export class SignupPage implements OnInit {
   ngOnInit(): void {
     this.form = this.fb.group(
       {
-        name: ['', [Validators.required, Validators.minLength(3)]],
+        name: ['', [Validators.required, Validators.minLength(3), Validators.pattern(/^[A-Za-z\s]+$/) ]],
         email: ['', [Validators.required, Validators.email]],
         password: ['', [
           Validators.required,
@@ -41,21 +41,20 @@ export class SignupPage implements OnInit {
     );
   }
 
-  // Group validator for password match
   passwordMatchValidator(group: FormGroup) {
     const password = group.get('password')?.value;
     const confirmPassword = group.get('confirmPassword')?.value;
     return password === confirmPassword ? null : { mismatch: true };
   }
 
-  // Accessors for template
+
   get name() { return this.form.get('name'); }
   get email() { return this.form.get('email'); }
   get password() { return this.form.get('password'); }
   get confirmPassword() { return this.form.get('confirmPassword'); }
 
   onSubmit(): void {
-    this.submitted = true; // mark form as submitted
+    this.submitted = true; 
     this.error = null;
 
     if (this.form.valid) {
@@ -68,14 +67,14 @@ export class SignupPage implements OnInit {
         createdAt: new Date().toISOString()
       };
 
-      // Check if user already exists
+      
       this.api.getUsers().subscribe({
         next: (users: User[]) => {
           const existingUser = users.find(u => u.email === user.email);
           if (existingUser) {
             this.error = 'Email is already registered. Please sign in.';
           } else {
-            // Add new user
+            
             this.api.addUser(user).subscribe({
               next: () => {
                 alert('Signup successful!');

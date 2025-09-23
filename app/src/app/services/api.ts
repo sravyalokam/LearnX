@@ -14,6 +14,8 @@ import { HttpParams } from '@angular/common/http';
 import { User, CompletedAssignments, Feedback } from '../models/user.model';
 import { EnrolledCourses } from '../models/enrolled-courses.model';
 import { of } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { tap } from 'rxjs/operators';
 
 
 @Injectable({
@@ -55,6 +57,12 @@ export class Api {
   return this.http.get<Courses[]>(`${this.baseUrl}/courses?title=${encodeURIComponent(title)}`);
   }
 
+  deleteCourse(courseId: number): Observable<void> {
+  return this.http.delete<void>(`${this.baseUrl}/courses/${courseId}`);
+}
+
+
+
 
 
   // Assignments
@@ -67,6 +75,10 @@ export class Api {
     return this.http.get<DetailedCourse[]>(`${this.baseUrl}/detailedcourses`);
   }
 
+  addAssignment(newAssignment: Assignment): Observable<Assignment> {
+    return this.http.post<Assignment>(`${this.baseUrl}/assignments`, newAssignment);
+  }
+
   // getAssignmentById(id: number): Observable<Assignment[]> {
   //   return this.http.get<any>(`${this.baseUrl}/assignments/${id}`);
   // }
@@ -75,18 +87,35 @@ export class Api {
 
   // Take Assignments
 
-  getTakeAssignment(title: string): Observable<TakeAssignment[]> {
-    const encodedTitle = encodeURIComponent(title);
-    return this.http.get<TakeAssignment[]>(`${this.baseUrl}/takeAssignment?title=${encodedTitle}`);
-  }
+  // getTakeAssignment(title: string): Observable<TakeAssignment[]> {
+  //   const encodedTitle = encodeURIComponent(title);
+  //   return this.http.get<TakeAssignment[]>(`${this.baseUrl}/takeAssignment?title=${encodedTitle}`);
+  // }
 
   updateAssignment(id: number, assignment: Assignment): Observable<Assignment> {
     return this.http.put<Assignment>(`${this.baseUrl}/assignments/${id}`, assignment);
   }
 
   
+  // addTakeAssignment(assignment: Assignment): Observable<TakeAssignment> {
+  //   return this.http.post<TakeAssignment>(`${this.baseUrl}/assignments`, assignment);
+  // }
 
+ addTakeAssignment(take: TakeAssignment): Observable<TakeAssignment> {
+  return this.http.post<TakeAssignment>(`${this.baseUrl}/takeAssignment`, take);
+}
 
+// Fetching take assignments by title
+getTakeAssignments(title?: string): Observable<TakeAssignment[]> {
+  if (title) {
+    return this.http.get<TakeAssignment[]>(`${this.baseUrl}/takeAssignment?title=${encodeURIComponent(title)}`);
+  }
+  return this.http.get<TakeAssignment[]>(`${this.baseUrl}/takeAssignment`);
+}
+
+   updateTakeAssignment(id: string, updated: Partial<TakeAssignment>): Observable<TakeAssignment> {
+    return this.http.patch<TakeAssignment>(`${this.baseUrl}/take-assignments/${id}`, updated);
+  }
 
   
   getCourseFaqs(courseId: number): Observable<Faq[]> {
@@ -134,7 +163,7 @@ export class Api {
   }
 
  
-  getUserById(id: number): Observable<User> {
+  getUserById(id: string | number): Observable<User> {
     return this.http.get<User>(`${this.baseUrl}/users/${id}`);
   }
 
@@ -148,7 +177,7 @@ export class Api {
   }
 
   
-  patchUser(id: number, data: Partial<User>): Observable<User> {
+  patchUser(id: string | number, data: Partial<User>): Observable<User> {
     return this.http.patch<User>(`${this.baseUrl}/users/${id}`, data);
   }
 
@@ -158,14 +187,13 @@ export class Api {
   }
 
 
+  getEnrolledCourses(UserId: number): Observable<string[]> {
+  return this.http.get<User>(`${this.baseUrl}/users/${UserId}`).pipe(
+    map(user => user.enrolledCourses || [])
+  );
+}
 
-  //Enrolled Courses
-
-  // addEnrolledCourse(course: string): Observable<EnrolledCourses> {
-  //   const body = { course };
-  //   console.log('POST body:', body);
-  //   return this.http.post<EnrolledCourses>(`${this.baseUrl}/enrolledcourses`, body);
-  // }
+  
 
 
   addCourseToUser(userId: number, courseTitle: string): Observable<User> {
@@ -190,7 +218,7 @@ export class Api {
 
       
       const alreadyExists = user.completedAssignments.some(
-        a => a.title === assignment.title
+        a => a.title === assignment.title && a.level=== assignment.level
       );
 
       if (!alreadyExists) {
@@ -205,9 +233,6 @@ export class Api {
   );
 }
 
- getEnrolledCourses(userId: number): Observable<Courses[]> {
-    return this.http.get<Courses[]>(`${this.baseUrl}/users/${userId}/enrolledCourses`);
-  }
 
 
 
@@ -215,25 +240,23 @@ export class Api {
 
 
  
-addFeedbackToUser(userId: number, feedback: Feedback): Observable<User> {
+addFeedbackToUser(userId: string | number, feedback: Feedback): Observable<User> {
   return this.getUserById(userId).pipe(
     switchMap(user => {
       if (!user.feedbacks) {
         user.feedbacks = [];
       }
 
-      const alreadyExists = user.feedbacks.some(f => f.assignmentId === feedback.assignmentId);
-      if (!alreadyExists) {
-        user.feedbacks.push(feedback);
-      }
+ 
+      user.feedbacks.push(feedback);
 
-      
       return this.http.patch<User>(`${this.baseUrl}/users/${userId}`, {
         feedbacks: user.feedbacks
       });
     })
   );
 }
+
 
 // Get all feedbacks from all users
 
@@ -249,6 +272,38 @@ getAllFeedbacks(): Observable<{ user: User; feedback: Feedback }[]> {
       return of(allFeedbacks);
     })
   );
+}
+
+
+
+
+changeUserPassword(userId: number, newPassword: string) {
+  
+  return this.patchUser(userId, { password: newPassword });
+}
+
+
+private cachedFeaturedCourses: Courses[] | null = null;
+
+getFeaturedCourses(): Observable<Courses[]> {
+  if (this.cachedFeaturedCourses) {
+    return of(this.cachedFeaturedCourses);
+  }
+
+  return this.http.get<Courses[]>(`${this.baseUrl}/courses`).pipe(
+    map(courses => 
+      courses.sort((a, b) => b.rating - a.rating).slice(0, 3) // sort & slice
+    ),
+    tap(top3 => this.cachedFeaturedCourses = top3) // cache the top 3
+  );
+}
+
+clearFeaturedCoursesCache(): void {
+  this.cachedFeaturedCourses = null;
+}
+
+postCourses(data: Courses): Observable<Courses> {
+  return this.http.post<Courses>(`${this.baseUrl}/courses`, data);
 }
 
 

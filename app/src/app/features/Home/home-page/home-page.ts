@@ -9,6 +9,7 @@ import { CoursesSection } from '../../courses/courses';
 import { ContactUs } from '../../contact-us/contact-us';
 import { User, Feedback } from '../../../models/user.model';
 import { FeedbackList } from '../../assignments/assignmentDetails/assignment-feedback-list/assignment-feedback-list';
+import { ChangeDetectorRef } from '@angular/core';
 
 
 
@@ -31,13 +32,18 @@ export class HomePage {
   constructor(private api: Api) { }
 
   ngOnInit(): void {
-    this.api.getCourses().subscribe((courses: Courses[]) => {
-      // Sort by rating and pick top 3
-      this.featuredCourses = courses
-        .sort((a, b) => b.rating - a.rating)
-        .slice(0, 3);
-    });
+    this.loadFeaturedCourses();
+
+    
   }
+
+  loadFeaturedCourses(): void {
+  this.api.getFeaturedCourses().subscribe(courses => {
+    this.featuredCourses = courses;
+  });
+  }
+
+ 
 
   
 }

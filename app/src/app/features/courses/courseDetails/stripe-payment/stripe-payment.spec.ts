@@ -1,18 +1,18 @@
 // import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-// import { AssignmentFeedbackList } from './assignment-feedback-list';
+// import { StripePayment } from './stripe-payment';
 
-// describe('AssignmentFeedbackList', () => {
-//   let component: AssignmentFeedbackList;
-//   let fixture: ComponentFixture<AssignmentFeedbackList>;
+// describe('StripePayment', () => {
+//   let component: StripePayment;
+//   let fixture: ComponentFixture<StripePayment>;
 
 //   beforeEach(async () => {
 //     await TestBed.configureTestingModule({
-//       imports: [AssignmentFeedbackList]
+//       imports: [StripePayment]
 //     })
 //     .compileComponents();
 
-//     fixture = TestBed.createComponent(AssignmentFeedbackList);
+//     fixture = TestBed.createComponent(StripePayment);
 //     component = fixture.componentInstance;
 //     fixture.detectChanges();
 //   });

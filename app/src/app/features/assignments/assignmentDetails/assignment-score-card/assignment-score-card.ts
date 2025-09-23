@@ -6,6 +6,7 @@ import { Auth } from '../../../../services/auth';
 import { User, Feedback } from '../../../../models/user.model';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-assignment-score-card',
   standalone: true,
@@ -29,7 +30,7 @@ export class AssignmentScoreCard implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Load logged-in user
+  
     this.auth.getCurrentUser().subscribe({
       next: (user) => {
         this.currentUser = user;
@@ -41,7 +42,6 @@ export class AssignmentScoreCard implements OnInit {
       }
     });
 
-    //  Always read query params
     this.route.queryParams.subscribe((params) => {
       this.score = +params['score'] || 0;
       this.totalQuestions = +params['total'] || 0;
@@ -49,7 +49,7 @@ export class AssignmentScoreCard implements OnInit {
       this.assignmentTitle = params['title'] || '';
       this.assignmentId = +params['assignmentId'] || 0;
 
-      console.log('📊 ScoreCard loaded from query params:', {
+      console.log(' ScoreCard loaded from query params:', {
         assignmentId: this.assignmentId,
         title: this.assignmentTitle,
         score: this.score,

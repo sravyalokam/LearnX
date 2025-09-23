@@ -1,4 +1,5 @@
 export interface Courses {
+  id?: number; 
   title: string;
   image: string;
   rating: number;
@@ -6,7 +7,6 @@ export interface Courses {
   totalHours: string;
   price: number;
   courseDetails: CourseDetails;
-
 }
 
 export interface CourseDetails {

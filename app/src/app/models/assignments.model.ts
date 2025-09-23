@@ -4,7 +4,7 @@ export interface Assignment {
   description: string;
   course: string;
   level: 'beginner' | 'intermediate' | 'advanced';
-  duration: string;
+  duration: number;
   completed: boolean;
   dueDate: string;
   points: number;

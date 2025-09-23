@@ -19,10 +19,11 @@ export class CurrentUser {
     if (stored) {
       const parsed: User = JSON.parse(stored);
       if (parsed.id) {
-        // Fetch latest user from backend
+        
+
         this.api.getUserById(parsed.id).subscribe({
           next: (user) => this.setUser(user),
-          error: () => this.setUser(parsed) // fallback
+          error: () => this.setUser(parsed) 
         });
       }
     }

@@ -1,10 +1,10 @@
 export interface User {
-    id?: number;
+    id?: string | number;
     name: string;
     email: string;
     password?: string; 
     avatarUrl?: string;
-    role?: 'student' | 'instructor' | 'admin';
+    role?: 'student' | 'instructor' | 'admin' | 'assignment-manager';
     createdAt?: string;
     enrolledCourses?: string[];
     completedAssignments?: CompletedAssignments[];
@@ -22,5 +22,4 @@ export interface Feedback {
     assignmentId: number;
     rating: number;       
     comment: string;
-    // submittedAt?: string; 
 }

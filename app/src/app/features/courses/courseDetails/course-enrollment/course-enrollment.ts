@@ -76,7 +76,7 @@ toastType: 'success' | 'error' = 'success';
   applyCoupon() {
     if (this.couponCode.trim().toLowerCase() === 'learnx50') {
       this.breakdown.discount = this.breakdown.courseFee * 0.5;
-      this.couponMsg = 'Coupon applied! 50% off 🎉';
+      this.couponMsg = 'Coupon applied! 50% off';
     } else {
       this.breakdown.discount = 0;
       this.couponMsg = 'Invalid coupon';

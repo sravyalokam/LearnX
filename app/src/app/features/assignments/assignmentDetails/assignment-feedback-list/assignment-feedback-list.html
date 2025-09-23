@@ -1,5 +1,4 @@
 
-<!-- feedback-list.html -->
 <section class="feedback-section">
   <h2 class="feedback-title">What Our Learners Say</h2>
 
@@ -9,14 +8,11 @@
     <div class="feedback-card" *ngFor="let fb of feedbacks">
       <div class="feedback-header">
         <strong>{{ fb.user.name }}</strong>
-        <span class="feedback-rating">⭐ {{ fb.feedback.rating }}/5</span>
+        <span class="feedback-rating"><i class="bi bi-star-fill" style="color: rgb(67, 67, 212);"></i> {{ fb.feedback.rating }}/5</span>
       </div>
       <p class="feedback-comment">
         "{{ fb.feedback.comment }}"
       </p>
-      <!-- <small class="feedback-date">
-        {{ fb.feedback.submittedAt | date: 'mediumDate' }}
-      </small> -->
     </div>
   </div>
 

@@ -13,4 +13,10 @@ export class OfferBanner {
   closeBanner() {
     this.close.emit();
   }
+
+  // isVisible = true;
+
+  // closeBanner() {
+  //   this.isVisible=false;
+  // }
 }

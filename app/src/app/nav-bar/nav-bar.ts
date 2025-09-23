@@ -29,7 +29,8 @@ export class NavBar implements OnInit {
   }
 
   onLogout(): void {
-    this.auth.logout();          
+    this.auth.logout();
+     console.log('After logout:', sessionStorage.getItem('learnx_session'));          
     this.router.navigate(['/signin']);  
   }
 

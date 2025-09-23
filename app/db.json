@@ -19,37 +19,37 @@
   ],
   "about": [
     {
-      "icon": "⭐",
+      "icon": "bi bi-people-fill",
       "title": "Industry Experts",
       "description": "Learn from professionals who bring real-world experience to every lesson.",
       "id": "4dbc"
     },
     {
-      "icon": "✅",
+      "icon": "bi bi-journal-check",
       "title": "Hands-On Projects",
       "description": "Build real projects to showcase your skills to employers and clients.",
       "id": "14bd"
     },
     {
-      "icon": "⚡",
+      "icon": "bi bi-lightning-charge-fill",
       "title": "Adaptive Learning",
       "description": "AI-powered learning adapts to your pace and style for better knowledge retention.",
       "id": "1437"
     },
     {
-      "icon": "👥",
+      "icon": "bi bi-people",
       "title": "Community Support",
       "description": "Join a thriving learner community to collaborate and grow together.",
       "id": "8edf"
     },
     {
-      "icon": "🎓",
+      "icon": "bi bi-award-fill",
       "title": "Certified Learning",
       "description": "Earn certificates that add value to your professional portfolio.",
       "id": "199b"
     },
     {
-      "icon": "🚀",
+      "icon": "bi bi-speedometer2",
       "title": "Lightning Fast",
       "description": "Access your learning anytime, anywhere with a fast and secure platform.",
       "id": "7212"
@@ -72,45 +72,40 @@
         "chapters": [
           {
             "id": "1",
-            "title": "Introduction to HTML",
+            "title": "Introduction to Web Development",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "10:00",
             "isActive": false
           },
           {
             "id": "2",
-            "title": "CSS Basics",
+            "title": "HTML (HyperText Markup Language)",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "12:00",
             "isActive": false
           },
           {
             "id": "3",
-            "title": "JavaScript Essentials",
+            "title": "CSS (Cascading Style Sheets)",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "15:00",
             "isActive": false
           },
           {
             "id": "4",
-            "title": "Responsive Design",
+            "title": "JavaScript (JS) Basics",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "10:30",
             "isActive": false
           },
           {
             "id": "5",
-            "title": "Setting Up Your Environment",
+            "title": "Advanced JavaScript",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "09:30",
             "isActive": false
           }
         ],
-        "currentChapter": {
-          "title": "Setting Up Your Environment",
-          "videoUrl": "assets/videos/React.mp4",
-          "videoDuration": "09:30"
-        },
         "faqs": [
           {
             "question": "What is front-end web development?",
@@ -142,45 +137,82 @@
         "chapters": [
           {
             "id": "1",
-            "title": "Hello World",
+            "title": "Introduction to C# and .NET",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "08:00",
             "isActive": false
           },
           {
             "id": "2",
-            "title": "CSS Basics",
+            "title": "C# Fundamentals",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "10:00",
             "isActive": false
           },
           {
             "id": "3",
-            "title": "JavaScript Essentials",
+            "title": "Object-Oriented Programming in C#",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "12:00",
             "isActive": false
           },
           {
             "id": "4",
-            "title": "Responsive Design",
+            "title": "Advanced C# Concepts",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "09:30",
             "isActive": false
           },
           {
             "id": "5",
-            "title": "Setting Up Your Environment",
+            "title": "Introduction to ASP.NET",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "6",
+            "title": "ASP.NET Core MVC",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "7",
+            "title": "ASP.NET Core Web API",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "8",
+            "title": "Data Access in ASP.NET",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "9",
+            "title": "Authentication and Authorization",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "10",
+            "title": "Front-End Integration",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "11",
+            "title": "Deployment and Best Practices",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "09:30",
             "isActive": false
           }
         ],
-        "currentChapter": {
-          "title": "Setting Up Your Environment",
-          "videoUrl": "assets/videos/React.mp4",
-          "videoDuration": "09:30"
-        },
         "faqs": [
           {
             "question": "What is C#?",
@@ -219,38 +251,61 @@
           },
           {
             "id": "2",
-            "title": "Python Basics",
+            "title": "Understanding Data",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "12:00",
             "isActive": false
           },
           {
             "id": "3",
-            "title": "Data Visualization",
+            "title": "Excel for Data Analytics",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "15:00",
             "isActive": false
           },
           {
             "id": "4",
-            "title": "Excel for Data Analysis",
+            "title": "SQL for Data Analytics",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "10:30",
             "isActive": false
           },
           {
             "id": "5",
-            "title": "Final Project",
+            "title": "Data Visualization",
             "videoUrl": "assets/videos/React.mp4",
             "videoDuration": "09:30",
             "isActive": false
+          },
+          {
+            "id": "6",
+            "title": "Python for Data Analytics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "7",
+            "title": "Statistics for Data Analytics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "8",
+            "title": "Advanced Analytics & Techniques",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "9",
+            "title": "Tools and Platforms",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
           }
         ],
-        "currentChapter": {
-          "title": "Final Project",
-          "videoUrl": "assets/videos/React.mp4",
-          "videoDuration": "09:30"
-        },
         "faqs": [
           {
             "question": "What is data analytics?",
@@ -265,6 +320,320 @@
         ]
       },
       "id": "c4f2"
+    },
+    {
+      "title": "SQL",
+      "image": "assets/images/sql.png",
+      "rating": 4.5,
+      "ratingsCount": "1,200 ratings",
+      "totalHours": "12h 45minutes",
+      "price": 299,
+      "courseDetails": {
+        "description": [
+          "Learn the fundamentals of front-end web development.",
+          "Understand HTML, CSS, and JavaScript essentials.",
+          "Build responsive and interactive web applications."
+        ],
+        "chapters": [
+          {
+            "id": "1",
+            "title": "Introduction to SQL and Relational Databases",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "2",
+            "title": "Data Definition Language (DDL)",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "12:00",
+            "isActive": false
+          },
+          {
+            "id": "3",
+            "title": "Data Manipulation Language (DML)",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "15:00",
+            "isActive": false
+          },
+          {
+            "id": "4",
+            "title": "Data Query Language (DQL)",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:30",
+            "isActive": false
+          },
+          {
+            "id": "5",
+            "title": "Aggregate Functions and Grouping",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "6",
+            "title": "Joins and Subqueries",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "7",
+            "title": "Data Control Language (DCL)",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "8",
+            "title": "Advanced SQL Topics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "9",
+            "title": "Database Normalization",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "10",
+            "title": "SQL Performance Optimization",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is front-end web development?",
+            "answer": "Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+            "isExpanded": false
+          },
+          {
+            "question": "Why is setting up an environment important?",
+            "answer": "Setting up a proper development environment is crucial for efficient coding, debugging, and testing.",
+            "isExpanded": false
+          }
+        ]
+      },
+      "id": "cf01"
+    },
+    {
+      "title": "Angular",
+      "image": "assets/images/angular.png",
+      "rating": 4.5,
+      "ratingsCount": "1,200 ratings",
+      "totalHours": "12h 45minutes",
+      "price": 299,
+      "courseDetails": {
+        "description": [
+          "Learn the fundamentals of front-end web development.",
+          "Understand HTML, CSS, and JavaScript essentials.",
+          "Build responsive and interactive web applications."
+        ],
+        "chapters": [
+          {
+            "id": "1",
+            "title": "Introduction to Angular",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "2",
+            "title": "TypeScript Basics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "12:00",
+            "isActive": false
+          },
+          {
+            "id": "3",
+            "title": "Angular Architecture & Components",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "15:00",
+            "isActive": false
+          },
+          {
+            "id": "4",
+            "title": "Directives and Pipes",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:30",
+            "isActive": false
+          },
+          {
+            "id": "5",
+            "title": "Services & Dependency Injection",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "6",
+            "title": "Routing & Navigation",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "7",
+            "title": "Forms in Angular",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "8",
+            "title": "HTTP Client & API Integration",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "9",
+            "title": "Angular Modules & Lazy Loading",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "10",
+            "title": "State Management & RxJS",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is front-end web development?",
+            "answer": "Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+            "isExpanded": false
+          },
+          {
+            "question": "Why is setting up an environment important?",
+            "answer": "Setting up a proper development environment is crucial for efficient coding, debugging, and testing.",
+            "isExpanded": false
+          }
+        ]
+      },
+      "id": "cf01"
+    },
+    {
+      "title": "Java Full Stack",
+      "image": "assets/images/java-full-stack.png",
+      "rating": 4.5,
+      "ratingsCount": "1,200 ratings",
+      "totalHours": "12h 45minutes",
+      "price": 299,
+      "courseDetails": {
+        "description": [
+          "Learn the fundamentals of front-end web development.",
+          "Understand HTML, CSS, and JavaScript essentials.",
+          "Build responsive and interactive web applications."
+        ],
+        "chapters": [
+          {
+            "id": "1",
+            "title": "Introduction to Full-Stack Development",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:00",
+            "isActive": false
+          },
+          {
+            "id": "2",
+            "title": "Java Fundamentals",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "12:00",
+            "isActive": false
+          },
+          {
+            "id": "3",
+            "title": "Advanced Java",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "15:00",
+            "isActive": false
+          },
+          {
+            "id": "4",
+            "title": "Database Management & SQL",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "10:30",
+            "isActive": false
+          },
+          {
+            "id": "5",
+            "title": "Web Development Basics",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "6",
+            "title": "Front-End Framework",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "7",
+            "title": "Spring Framework",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "8",
+            "title": "RESTful API Development",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "9",
+            "title": "Database Integration",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "10",
+            "title": "Security and Authentication",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "11",
+            "title": "DevOps & Deployment",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          },
+          {
+            "id": "11",
+            "title": "Testing",
+            "videoUrl": "assets/videos/React.mp4",
+            "videoDuration": "09:30",
+            "isActive": false
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is front-end web development?",
+            "answer": "Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript.",
+            "isExpanded": false
+          },
+          {
+            "question": "Why is setting up an environment important?",
+            "answer": "Setting up a proper development environment is crucial for efficient coding, debugging, and testing.",
+            "isExpanded": false
+          }
+        ]
+      },
+      "id": "cf01"
     }
   ],
   "assignments": [
@@ -366,7 +735,74 @@
       "completed": false,
       "dueDate": "2025-09-22",
       "points": 200
+    },
+    {
+      "id": "4A",
+      "title": "SQL",
+      "description": "Build predictive models and advanced dashboards using Python and Excel.",
+      "course": "SQL",
+      "level": "Beginner",
+      "duration": "6 hours",
+      "completed": false,
+      "dueDate": "2025-09-22",
+      "points": 200
+    },
+    {
+      "id": "4B",
+      "title": "SQL",
+      "description": "Build predictive models and advanced dashboards using Python and Excel.",
+      "course": "SQL",
+      "level": "Intermediate",
+      "duration": "6 hours",
+      "completed": false,
+      "dueDate": "2025-09-22",
+      "points": 200
+    },
+    {
+      "id": "4C",
+      "title": "SQL",
+      "description": "Build predictive models and advanced dashboards using Python and Excel.",
+      "course": "SQL",
+      "level": "Advanced",
+      "duration": "6 hours",
+      "completed": false,
+      "dueDate": "2025-09-22",
+      "points": 200
+    },
+    {
+      "id": "5A",
+      "title": "Angular",
+      "description": "Build predictive models and advanced dashboards using Python and Excel.",
+      "course": "Angular",
+      "level": "Advanced",
+      "duration": "6 hours",
+      "completed": false,
+      "dueDate": "2025-09-22",
+      "points": 200
+    },
+    {
+      "id": "5B",
+      "title": "Angular",
+      "description": "Build predictive models and advanced dashboards using Python and Excel.",
+      "course": "Angular",
+      "level": "Advanced",
+      "duration": "6 hours",
+      "completed": false,
+      "dueDate": "2025-09-22",
+      "points": 200
+    },
+    {
+      "id": "5C",
+      "title": "Angular",
+      "description": "Build predictive models and advanced dashboards using Python and Excel.",
+      "course": "Angular",
+      "level": "Advanced",
+      "duration": "6 hours",
+      "completed": false,
+      "dueDate": "2025-09-22",
+      "points": 200
     }
+    
   ],
   "takeAssignment": [
     {
@@ -463,6 +899,116 @@
           }
         },
         {
+          "level": "Beginner",
+          "question": "Which HTML tag is used for the largest heading?",
+          "options": [
+            "<h1>",
+            "<h6>",
+            "<head>",
+            "<heading>"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 7,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "How do you center a div using Flexbox?",
+          "options": [
+            "justify-content:center",
+            "text-align:center",
+            "margin:auto",
+            "align-items:flex-start"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "How do you center a div using Flexbox?",
+          "options": [
+            "justify-content:center",
+            "text-align:center",
+            "margin:auto",
+            "align-items:flex-start"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "How do you center a div using Flexbox?",
+          "options": [
+            "justify-content:center",
+            "text-align:center",
+            "margin:auto",
+            "align-items:flex-start"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "How do you center a div using Flexbox?",
+          "options": [
+            "justify-content:center",
+            "text-align:center",
+            "margin:auto",
+            "align-items:flex-start"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
           "level": "Intermediate",
           "question": "How do you center a div using Flexbox?",
           "options": [
@@ -505,14 +1051,455 @@
               }
             ]
           }
+        },
+        {
+          "level": "Advanced",
+          "question": "Which method is used to fetch data from an API in JavaScript?",
+          "options": [
+            "fetch()",
+            "getData()",
+            "axiosCall()",
+            "retrieve()"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 8,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Advanced",
+          "question": "Which HTML5 feature allows web pages to store data locally in the browser?",
+          "options": [
+            "Local Storage",
+            "Session Cookies",
+            "IndexedDB",
+            "All of the above"
+          ],
+          "correctAns": 3,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 9,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Advanced",
+          "question": "Which technique is best for improving web page load performance?",
+          "options": [
+            "Minifying CSS and JS",
+            "Using lazy loading for images",
+            "Compressing assets",
+            "All of the above"
+          ],
+          "correctAns": 3,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 10,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Advanced",
+          "question": "How do you center a div using Flexbox?",
+          "options": [
+            "justify-content:center",
+            "text-align:center",
+            "margin:auto",
+            "align-items:flex-start"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
         }
       ]
     },
+    {
+  "id": "A105",
+  "title": "Angular",
+  "course": "Angular",
+  "questions": [
+    {
+      "level": "Beginner",
+      "question": "Which decorator is used to define an Angular component?",
+      "options": [
+        "@NgModule",
+        "@Component",
+        "@Injectable",
+        "@Directive"
+      ],
+      "correctAns": 1,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 1, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Beginner",
+      "question": "Which Angular directive is used for conditional rendering?",
+      "options": [
+        "*ngIf",
+        "*ngFor",
+        "*ngSwitch",
+        "*ngModel"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 2, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Beginner",
+      "question": "Which module is required for two-way data binding?",
+      "options": [
+        "FormsModule",
+        "HttpClientModule",
+        "BrowserModule",
+        "ReactiveFormsModule"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 3, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Beginner",
+      "question": "Which symbol is used for property binding in Angular templates?",
+      "options": [
+        "[ ]",
+        "( )",
+        "{{ }}",
+        "#"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 4, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Beginner",
+      "question": "Which Angular CLI command is used to generate a new component?",
+      "options": [
+        "ng generate component",
+        "ng new component",
+        "ng add component",
+        "ng create component"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 5, "feedback": ""}]
+      }
+    },
+
+    {
+      "level": "Intermediate",
+      "question": "Which service is used to make HTTP requests in Angular?",
+      "options": [
+        "HttpClient",
+        "HttpService",
+        "Axios",
+        "FetchService"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 6, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Intermediate",
+      "question": "Which lifecycle hook is called after the component's view has been initialized?",
+      "options": [
+        "ngOnInit",
+        "ngAfterViewInit",
+        "ngOnChanges",
+        "ngDoCheck"
+      ],
+      "correctAns": 1,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 7, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Intermediate",
+      "question": "Which decorator is used to inject a dependency in Angular?",
+      "options": [
+        "@Injectable",
+        "@Input",
+        "@Output",
+        "@ViewChild"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 8, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Intermediate",
+      "question": "Which directive is used to loop over a list in Angular templates?",
+      "options": [
+        "*ngIf",
+        "*ngFor",
+        "*ngSwitch",
+        "*ngModel"
+      ],
+      "correctAns": 1,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 9, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Intermediate",
+      "question": "Which Angular feature allows communication from child to parent component?",
+      "options": [
+        "@Input",
+        "@Output & EventEmitter",
+        "Service injection",
+        "ngOnChanges"
+      ],
+      "correctAns": 1,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 10, "feedback": ""}]
+      }
+    },
+
+    {
+      "level": "Advanced",
+      "question": "Which Angular module is used for reactive forms?",
+      "options": [
+        "ReactiveFormsModule",
+        "FormsModule",
+        "HttpClientModule",
+        "BrowserModule"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 11, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Advanced",
+      "question": "Which Angular concept allows lazy loading of modules?",
+      "options": [
+        "RouterModule with loadChildren",
+        "NgModule imports",
+        "Component decorator",
+        "Services injection"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 12, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Advanced",
+      "question": "Which RxJS operator is used to transform observable values?",
+      "options": [
+        "map",
+        "filter",
+        "merge",
+        "combineLatest"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 13, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Advanced",
+      "question": "Which Angular lifecycle hook is used to unsubscribe from observables?",
+      "options": [
+        "ngOnDestroy",
+        "ngOnInit",
+        "ngAfterViewInit",
+        "ngDoCheck"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 14, "feedback": ""}]
+      }
+    },
+    {
+      "level": "Advanced",
+      "question": "Which strategy improves performance for large Angular apps by preloading modules?",
+      "options": [
+        "PreloadingStrategy in RouterModule",
+        "ChangeDetectionStrategy.OnPush",
+        "Lazy loading components",
+        "Using trackBy in ngFor"
+      ],
+      "correctAns": 0,
+      "scoreCard": {
+        "currentScore": 0,
+        "correctAnswers": 0,
+        "incorrectAnswers": 0,
+        "feedback": [{"id": 15, "feedback": ""}]
+      }
+    }
+  ]
+}
+,
     {
       "id": "A102",
       "title": "C# with ASP.NET",
       "course": "C# with ASP.NET",
       "questions": [
+        {
+          "level": "Beginner",
+          "question": "Which keyword defines a class in C#?",
+          "options": [
+            "class",
+            "struct",
+            "object",
+            "interface"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which keyword defines a class in C#?",
+          "options": [
+            "class",
+            "struct",
+            "object",
+            "interface"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which keyword defines a class in C#?",
+          "options": [
+            "class",
+            "struct",
+            "object",
+            "interface"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which keyword defines a class in C#?",
+          "options": [
+            "class",
+            "struct",
+            "object",
+            "interface"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
         {
           "level": "Beginner",
           "question": "Which keyword defines a class in C#?",
@@ -653,6 +1640,237 @@
           }
         }
       ]
+    },
+    {
+      "id": "A102",
+      "title": "SQL",
+      "course": "SQL",
+      "questions": [
+        {
+          "level": "Beginner",
+          "question": "Which SQL statement is used to retrieve data from a database?",
+          "options": [
+            "SELECT",
+            "GET",
+            "FETCH",
+            "RETRIEVE"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which clause is used to filter records in SQL?",
+          "options": [
+            "WHERE",
+        "HAVING",
+        "FILTER",
+        "GROUP BY"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which SQL keyword is used to sort the result-set?",
+          "options": [
+            "ORDER BY",
+        "SORT",
+        "GROUP BY",
+        "ARRANGE"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which SQL statement is used to insert new data into a table?",
+          "options": [
+            "INSERT INTO",
+        "ADD RECORD",
+        "CREATE RECORD",
+        "ADD INTO"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Beginner",
+          "question": "Which SQL function is used to count the number of rows in a table?",
+          "options": [
+            "COUNT()",
+        "SUM()",
+        "TOTAL()",
+        "NUMBER()"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 1,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "Which SQL keyword is used to remove duplicates from a result set?",
+          "options": [
+            "DISTINCT", "UNIQUE", "DIFFERENT", "NONE"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "Which SQL statement is used to update existing records in a table?",
+          "options": [
+            "UPDATE", "MODIFY", "SET", "CHANGE"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "Which JOIN returns all records from the left table and matched records from the right table?",
+          "options": [
+            "LEFT JOIN", "RIGHT JOIN", "INNER JOIN", "FULL JOIN"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "Which SQL clause is used with GROUP BY to filter aggregated results?",
+          "options": [
+            "HAVING", "WHERE", "ORDER BY", "FILTER"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Intermediate",
+          "question": "Which SQL operator is used to search for a specified pattern in a column?",
+          "options": [
+            "LIKE", "MATCH", "PATTERN", "SEARCH"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 2,
+                "feedback": ""
+              }
+            ]
+          }
+        },
+        {
+          "level": "Advanced",
+          "question": "Which SQL statement is used to create a new table with constraints?",
+          "options": [
+            "CREATE TABLE", "INSERT TABLE", "NEW TABLE", "MAKE TABLE"
+          ],
+          "correctAns": 0,
+          "scoreCard": {
+            "currentScore": 0,
+            "correctAnswers": 0,
+            "incorrectAnswers": 0,
+            "feedback": [
+              {
+                "id": 3,
+                "feedback": ""
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "detailedcourses": [
@@ -692,25 +1910,44 @@
       "id": "1",
       "name": "Asha Rao",
       "email": "asha@example.com",
-      "password": "Password123!",
-      "avatarUrl": "https://i.pravatar.cc/100?img=12",
+      "password": "Sravya@12",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Asha Rao",
       "role": "student",
       "createdAt": "2024-08-01T10:00:00.000Z",
       "enrolledCourses": [
-        "Web Development"
+        "Web Development",
+        "C# with ASP.NET"
       ],
       "completedAssignments": [
         {
-          "title": "Web Development",
-          "level": "beginner"
-        },
-        {
+          "id": null,
           "title": "C# with ASP.NET",
-          "level": "beginner"
+          "level": "Intermediate"
         },
         {
+          "id": null,
           "title": "Data Analytics",
-          "level": "beginner"
+          "level": "Beginner"
+        },
+        {
+          "id": null,
+          "title": "C# with ASP.NET",
+          "level": "Beginner"
+        },
+        {
+          "id": null,
+          "title": "Web Development",
+          "level": "Beginner"
+        },
+        {
+          "id": null,
+          "title": "Web Development",
+          "level": "Intermediate"
+        },
+        {
+          "id": null,
+          "title": "Data Analytics",
+          "level": "Intermediate"
         }
       ],
       "feedbacks": [
@@ -726,13 +1963,10 @@
       "name": "Ravi Kumar",
       "email": "ravi@example.com",
       "password": "RaviPass#22",
-      "avatarUrl": "https://i.pravatar.cc/100?img=5",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Ravi Kumar",
       "role": "instructor",
       "createdAt": "2024-09-15T07:30:00.000Z",
       "enrolledCourses": [
-        "C# with ASP.NET",
-        "Data Analytics",
-        "Web Development",
         "Web Development"
       ],
       "feedbacks": [
@@ -740,6 +1974,18 @@
           "assignmentId": 0,
           "rating": 5,
           "comment": "I would highly recommend this Web Development Bootcamp to anyone interested in pursuing a career in web development or looking to enhance their skills in this field."
+        }
+      ],
+      "completedAssignments": [
+        {
+          "id": null,
+          "title": "Web Development",
+          "level": "Beginner"
+        },
+        {
+          "id": null,
+          "title": "C# with ASP.NET",
+          "level": "Beginner"
         }
       ]
     },
@@ -751,10 +1997,7 @@
       "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Sravya Lokam",
       "role": "student",
       "createdAt": "2025-09-09T13:18:27.431Z",
-      "enrolledCourses": [
-        "Web Development",
-        "C# with ASP.NET"
-      ],
+      "enrolledCourses": [],
       "feedbacks": [
         {
           "assignmentId": 0,
@@ -777,20 +2020,17 @@
           "comment": "A well-structured and engaging program that exceeded my expectations"
         }
       ],
-      "enrolledCourses": [
-        "Web Development"
-      ]
+      "enrolledCourses": []
     },
     {
       "id": "c430",
       "name": "Laxmi Swaroopa",
       "email": "laxmibandaru3@gmail.com",
       "password": "Laxmi@34",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Laxmi Swaroopa",
       "role": "student",
       "createdAt": "2025-09-13T04:07:00.541Z",
-      "enrolledCourses": [
-        "C# with ASP.NET"
-      ],
+      "enrolledCourses": [],
       "feedbacks": [
         {
           "assignmentId": 0,
@@ -825,28 +2065,83 @@
       "createdAt": "2025-09-16T01:31:34.448Z"
     },
     {
-      "id": "d8b8",
-      "name": "Lokam",
-      "email": "pushpa1@gmail.com",
-      "password": "Sravya$123",
-      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Lokam",
-      "role": "student",
-      "createdAt": "2025-09-16T01:40:53.379Z"
-    },
-    {
       "id": "feb4",
       "name": "Sravya Lokam",
-      "email": "sravyapushpa2003@gmail.com",
-      "password": "Sravya@123",
+      "email": "sravyapushpa20030@gmail.com",
+      "password": "Sravya@00",
       "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Sravya Lokam",
-      "role": "student",
+      "role": "assignment-manager",
       "createdAt": "2025-09-16T06:08:30.673Z"
-    }
-  ],
-  "enrolledcourses": [
+    },
     {
-      "id": "b7c6",
-      "course": "Web Development"
+      "id": "5",
+      "name": "Sravya Lokam",
+      "email": "sravyapushpa2003@gmail.com",
+      "password": "Sravya@1",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Sravya Lokam",
+      "role": "admin",
+      "createdAt": "2025-09-16T06:08:30.673Z",
+      "enrolledCourses": [
+        "Web Development",
+        "Data Structures & Algorithms with C++",
+        "Java Full Stack",
+        "Test",
+        "Check",
+        "C# with ASP.NET"
+      ],
+      "completedAssignments": [
+        {
+          "id": null,
+          "title": "Web Development",
+          "level": "Beginner"
+        },
+        {
+          "id": null,
+          "title": "Web Development",
+          "level": "Intermediate"
+        },
+        {
+          "id": null,
+          "title": "C# with ASP.NET",
+          "level": "Beginner"
+        },
+        {
+          "id": null,
+          "title": "C# with ASP.NET",
+          "level": "Intermediate"
+        }
+      ],
+      "feedbacks": []
+    },
+    {
+      "id": "737d",
+      "name": "Bhanu uppala",
+      "email": "bhanu123@gmail.com",
+      "password": "Bhanu@12",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Bhanu uppala",
+      "role": "student",
+      "createdAt": "2025-09-19T05:39:19.045Z"
+    },
+    {
+      "id": "c5aa",
+      "name": "Sravya",
+      "email": "sravya12@gmail.com",
+      "password": "Sravya@12",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Sravya",
+      "role": "student",
+      "createdAt": "2025-09-19T10:08:25.440Z"
+    },
+    {
+      "id": "08d2",
+      "name": "Jahnavi",
+      "email": "jahnavitenneti@gmail.com",
+      "password": "Bhannu@123",
+      "avatarUrl": "https://api.dicebear.com/7.x/identicon/svg?seed=Jahnavi",
+      "role": "student",
+      "createdAt": "2025-09-22T11:38:38.191Z",
+      "enrolledCourses": [
+        "Web Development"
+      ]
     }
   ]
 }
